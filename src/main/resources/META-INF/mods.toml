@@ -1,0 +1,139 @@
+# This is an example mods.toml file. It contains the data relating to the loading mods.
+# There are several mandatory fields (#mandatory), and many more that are optional (#optional).
+# The overall format is standard TOML format, v0.5.0.
+# Note that there are a couple of TOML lists in this file.
+# Find more information on toml format here:  https://github.com/toml-lang/toml
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+modLoader="javafml" #mandatory
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+loaderVersion="[39,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+# The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
+# Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
+license="All rights reserved"
+# A URL to refer people to when problems occur with this mod
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+# A list of mods - how many allowed here is determined by the individual mod loader
+[[mods]] #mandatory
+# The modid of the mod
+modId="smp" #mandatory
+# The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
+# ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
+# see the associated build.gradle script for how to populate this completely automatically during a build
+version="${file.jarVersion}" #mandatory
+ # A display name for the mod
+displayName="SMP" #mandatory
+# A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
+#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+# A URL for the "homepage" for this mod, displayed in the mod UI
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+# A file name (in the root of the mod JAR) containing a logo for display
+# logoFile="examplemod.png" #optional
+# A text field displayed in the mod UI
+# credits="Thanks for this example mod goes to Java" #optional
+# A text field displayed in the mod UI
+authors="God" #optional
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+Is gewoon Clonny Clickbait man
+
+Bah, je koek is vies, die van mij is beter
+In de speeltuin, kom je vader tegen
+En hij pakt me Liga af maar ik hou hem tegen
+Trap hem zo hard in z’n zak, hij kan niet bewegen
+Ik was gek op koek, maar op Liga’s ’t meeste
+Voor me Liga’s af en toe gestreden
+Ik ga koek eten voor een goede prijs
+Ik ben een koopjesjager, 2 + 1 voor mij
+Van harde koek voorzien aan de achterkant
+Maar het lekkerste zit voor, dat lik je dan
+Voor die choco’s, loop ik kranten man
+Ik was op fiets en dat nachtenlang
+Hier zijn die koeken hard, en de top is soft
+Ik heb voedseltekort, want m’n Liga’s zijn op
+Ik prop ze naar binnen of ik vreet ze op
+Met aardbei of volgraan, eet totdat ik kots
+Zijn ze vandaag gekocht, dan zijn ze morgen op
+Ik haal je eten, niet je honger weg
+Weet... nog die dagen at ze ongeremd
+Nu sla ik ze op terwijl jij hongerig bent
+Ik moest zo vaak sparen voor die Liga’s man
+Maar nu ben ik verzekerd, heb een voorraad man
+Ja, grijp die Liga’s, ik ben loesoe man
+Clickbait maar ik doe het voor de doekoes man!
+
+Een Liga, een Liga
+Waarom gun je mij geen Liga, een Liga?
+Ik ben op school, ik wil Wicky en een Liga
+Ik denk niet eens aan snoepen, ben gefocust op die koeken
+Alle smaken wil ik proeven, nee
+Een Liga, een Liga
+Waarom gun je mij geen Liga, een Liga?
+Ik ben op school, ik wil Wicky en een Liga
+Ik denk niet eens aan snoepen, ben gefocust op die koeken
+Dus ik zal ze blijven zoeken, nee
+
+Stommerd, ik ben uitgehongerd
+Altijd al op koek, niet met die boeken bezig
+Je eet bij mij, maar je kreeg geen eten
+Je moet alles delen, ja zo denken velen
+Op school zijn er Liga’s, maar wie eet de meeste?
+Beter in je mond, niet in je zakken steken
+Rrratata, ze kunnen  je laten je scheten
+Ik had koek ja, maar nooit met de neppe bezig
+Zelfs op de gang, niemand mocht het weten
+Voor die Appel-Peer, die ik nu begeer
+En ik vroeg die koek, maar ik heb drank gekregen
+Dus je snapt toch dat ik nu m’n blaas moet legen
+Zout broer, als ik op je koeken pis
+Op vakantie eet ik zelfs die Haverkicks
+Eet ze alle 7, eet jij liever Sprits?
+Ja die smaken wel, maar vooral naar niks!
+
+Een Liga, een liga
+Waarom gun je mij geen Liga, een Liga?
+Ik ben op school, ik wil Wicky en een Liga
+Ik denk niet eens aan snoepen, ben gefocust op die koeken
+Alle smaken wil ik proeven, nee
+Een Liga, een Liga
+Waarom gun je mij geen Liga, een Liga?
+Ik ben op school, ik wil Wicky en een Liga
+Ik denk niet eens aan snoepen, ben gefocust op die koeken
+Dus ik zal ze blijven zoeken, nee
+
+Na "GoldWeedle" was ze echt verliefd
+Maar ik dacht alleen aan Liga’s dus ik wilde niet
+Me Liga?, ik ga niet delen vriend
+Wordt je Liga afgepakt, stilt je honger niet
+Je koek die wordt gepropt en gesopt
+lekker in de thee of in je koffie mok
+Kan alles op, gewoon puur of met saus
+Breng ze langs de deur, in mijn buurt vind je scouts ja...
+Misschien iets voor jou?
+Echt vet broer, ze bouwen dingen van hout
+Er wordt veel gebout, door die havermout
+Krijgt m’n Liga niet te zien, geef hem niet aan jou
+Pak ‘em één keer, allebei je ogen blauw
+Je krijgt ze niet, dus ik zweer het jou
+En ik kom niet aan, wat beweer je nou?
+Kom niet aan m’n Liga want ik maak je koud!
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.smp]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[39,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.smp]]
+    modId="minecraft"
+    mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+    versionRange="[1.18.1,1.19)"
+    ordering="NONE"
+    side="BOTH"
